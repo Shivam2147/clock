@@ -25,7 +25,25 @@ function getRandomHexColor() {
     day.innerHTML = day2.toLocaleDateString("en-IN" ,options);
     hour.innerHTML = day2.getHours();
     min.innerHTML = day2.getMinutes();
-    week.innerHTML = day2.getDay();
+    switch(day2.getDay())
+    {
+      case 1: week.innerHTML = 'MONDAY';
+      break;
+      case 2: week.innerHTML = 'TUESDAY';
+      break;
+      case 3: week.innerHTML = 'WEDNESDAY';
+      break;
+
+      case 4: week.innerHTML = 'THURSDAY';
+      break;
+      case 5: week.innerHTML = 'FRIDAY';
+      break;
+      case 6: week.innerHTML = 'SATURDAY';
+      break;
+      case 7: week.innerHTML = 'SUNDAY';
+      break;
+
+    }
     sec.innerHTML = day2.getSeconds();
     main.style.backgroundColor = getRandomHexColor()
   }, 1000);

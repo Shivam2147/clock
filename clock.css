@@ -85,6 +85,6 @@ main{
     .week{
         font-size: 70px;
         position: absolute;
-        top: 250px;
+        top: 30%;
     }
 }

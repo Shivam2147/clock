@@ -84,5 +84,7 @@ main{
 @media only screen and (max-width:500px) {
     .week{
         font-size: 70px;
+        position: absolute;
+        top: 250px;
     }
 }
